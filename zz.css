@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    text-align:center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#c1 {
+    text-align: center;
+}
+
+#c2 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+#c3 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+}
+/*
+#c4 {
+    margin: 50px 0px 0px 0px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+*/
+.container1 {
+    margin: 50px 0px 60px 0px;
+}
+
+header h1 {
+    font-size:50px;
+}
+
+section h1 {
+    font-size: 40px;
+}
+
+section h2 {
+    font-size: 35px;
+}
+
+.container1 p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.container11 img {
+    width: 600px;
+    height: auto;
+}
+
+.container50 img {
+    width: 550PX;
+   height: 350px;
+   object-fit: cover;
+}
+
+.yazi img {
+    width: 20px;
+    height: auto;
+}
+
+.tex1 {
+    margin: 35px 0px 7px 0px;
+ }
+
+.tex2 {
+    margin: 7px 0px 35px 0px;
+}
+
+#kaisen {
+    margin: 150px 0px 7px 0px;
+}
+
+#toriton {
+    margin: 150px 0px 7px 0px;
+}
+
+#ra-men {
+    margin: 150px 0px 7px 0px;
+}
+
+#sohuto1 {
+    margin: 150px 0px 7px 0px;
+}
+
+#sohuto2 {
+    margin: 150px 0px 7px 0px;
+}
+
+#yakitori {
+    margin: 150px 0px 7px 0px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 10px 150px;
+    border: 3px solid #FCFAFA;
+    text-decoration: none;
+    color: #F9F9F9;
+    flex: 1;
+}
+
+.nav-links li a:hover {
+    background-color: #333;
+    color: #E40505;
+}
+
+.container1 li a:hover {
+    color: #E40505;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+
+.relative-content {
+    margin-bottom: 20px;
+}
+
+a + a {
+    margin-left: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.karte-temp-text span {
+    font-weight: bold;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 ul {
+    padding: 0;
+}
+
+.container1 ul li {
+    padding: 10px 0;
+}
+
+.container1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.relative-content img {
+    width: 40px;
+}
+
+.relative-content1 img {
+    width: 42px;
+}
+
+#box {
+    border: 1px solid gray;
+    background-color: rgb(246, 247, 255);
+    margin-left: 350px;
+    width: 600px;
+}
+
+#box1 {
+    border: 1px solid gray;
+    background-color: rgb(33, 66, 252);
+    margin-left: 350px;
+    width: 600px;
+}
+
+.pagetop {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagetop:hover {
+    color: #fff !important;
+    background-color: #ED702B;
+    text-decoration: none;
+}
+
+.ss {
+    width: 600px;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: left;
+    margin: 0px 0px 50px 330px;
+}
+
+.overview {
+    border: 5px solid rgb(112, 112, 112);
+    background-color: rgba(246, 247, 255, 0);
+    margin-left: 330px;
+    width: 600px;
+}
+
+/*
+.お店一覧 {
+    word-break: break-all;
+}
