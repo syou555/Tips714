@@ -23,6 +23,11 @@ header h1 {
     margin-bottom: 10px;
 }
 
+#c1 .ss,
+#c1 .overview{
+    margin-left: 700px;
+}
+
 #c1 {
     text-align: center;
 }
@@ -40,15 +45,11 @@ header h1 {
     margin-right: auto;
     width: 130px;
 }
-/*
-#c4 {
-    margin: 50px 0px 0px 0px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
+
+#services {
+    margin-left: 300px;
 }
-*/
+
 .container1 {
     margin: 50px 0px 60px 0px;
 }
@@ -287,9 +288,4 @@ footer ul {
     background-color: rgba(246, 247, 255, 0);
     margin-left: 330px;
     width: 600px;
-}
-
-/*
-.お店一覧 {
-    word-break: break-all;
 }
