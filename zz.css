@@ -43,7 +43,7 @@ header h1 {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 130px;
+    width: 22%;
 }
 
 #services {
@@ -241,15 +241,15 @@ footer ul {
 #box {
     border: 1px solid gray;
     background-color: rgb(246, 247, 255);
-    margin-left: 350px;
-    width: 600px;
+    margin-left: 27%;
+    width: 46.2%;
 }
 
 #box1 {
     border: 1px solid gray;
     background-color: rgb(33, 66, 252);
-    margin-left: 350px;
-    width: 600px;
+    margin-left: 27%;
+    width: 46.2%;
 }
 
 .pagetop {
