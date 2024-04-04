@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
@@ -15,12 +15,12 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1% 0%;
 }
 
 header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 300%;
+    margin-bottom: 1%;
 }
 
 #c1 .ss,
@@ -36,7 +36,7 @@ header h1 {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 61%;
 }
 
 #c3 {
@@ -54,25 +54,17 @@ header h1 {
     margin: 20% 0% 20% -25%;
 }
 
-header h1 {
-    font-size:50px;
-}
-
-section h1 {
-    font-size: 40px;
-}
-
 section h2 {
-    font-size: 35px;
+    font-size: 250%;
 }
 
 .container1 p {
-    font-size: 20px;
+    font-size: 150%;
     color: #fff;
 }
 
 .container11 img {
-    width: 600px;
+    width: 40%;
     height: auto;
 }
 
@@ -83,61 +75,39 @@ section h2 {
 }
 
 .yazi img {
-    width: 20px;
+    width: 2%;
     height: auto;
 }
 
-.tex1 {
-    margin: 35px 0px 7px 0px;
- }
-
-.tex2 {
-    margin: 7px 0px 35px 0px;
-}
-
-#kaisen {
-    margin: 150px 0px 7px 0px;
-}
-
-#toriton {
-    margin: 150px 0px 7px 0px;
-}
-
-#ra-men {
-    margin: 150px 0px 7px 0px;
-}
-
-#sohuto1 {
-    margin: 150px 0px 7px 0px;
-}
-
-#sohuto2 {
-    margin: 150px 0px 7px 0px;
-}
-
+#kaisen,
+#toriton,
+#ra-men,
+#sohuto1,
+#sohuto2,
 #yakitori {
-    margin: 150px 0px 7px 0px;
+    margin: 10% 0% 1% 0%;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     justify-content: center;
 }
 
 .nav-links li {
-    margin-right: 10px;
+    margin-right: 3%;
 }
 
 .nav-links li:last-child {
-    margin-right: 0;
+    margin-right: 0%;
 }
 
+/*パディングの左右指定、％表記にするフォント崩れる為現在そのまま*/
 .nav-links li a {
     display: inline-block;
-    padding: 10px 150px;
+    padding: 3% 150px;
     border: 3px solid #FCFAFA;
     text-decoration: none;
     color: #F9F9F9;
@@ -154,12 +124,11 @@ section h2 {
 }
 
 section {
-    padding: 40px 0;
+    padding: 6% 0%;
 }
 
 h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 ul {
@@ -168,29 +137,29 @@ ul {
 
 form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 form input,
 form textarea {
     width: 50%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.5%;
+    margin-bottom: 1%;
 }
 
 div button {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 1% 1.5%;
     cursor: pointer;
 }
 
 footer {
     background-color: #000000;
     color: #fff;
-    padding: 10px;
-    bottom: 0;
+    padding: 1%;
+    bottom: 0%;
     width: 100%;
   }
 
@@ -198,12 +167,8 @@ footer {
     margin-bottom: 20px;
 }
 
-a + a {
-    margin-left: 20px;
-}
-
 footer p {
-    font-size: 14px;
+    font-size: 100%;
 }
 
 .karte-temp-text span {
@@ -213,16 +178,16 @@ footer p {
 footer ul {
     float: right;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 .container1 ul {
-    padding: 0;
+    padding: 0%;
 }
 
 .container1 ul li {
-    padding: 10px 0;
+    padding: 2% 0%;
 }
 
 .container1 ul li a {
@@ -230,12 +195,8 @@ footer ul {
     color: #000;
 }
 
-.relative-content img {
-    width: 40px;
-}
-
 .relative-content1 img {
-    width: 42px;
+    width: 20%;
 }
 
 #box {
