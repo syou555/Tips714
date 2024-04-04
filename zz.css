@@ -25,7 +25,7 @@ header h1 {
 
 #c1 .ss,
 #c1 .overview{
-    margin-left: 700px;
+    margin-left: 33%;
 }
 
 #c1 {
@@ -51,7 +51,7 @@ header h1 {
 }
 
 .container1 {
-    margin: 50px 0px 60px 0px;
+    margin: 20% 0% 20% -25%;
 }
 
 header h1 {
@@ -77,8 +77,8 @@ section h2 {
 }
 
 .container50 img {
-    width: 550PX;
-   height: 350px;
+    width: 30%;
+   height: 10%;
    object-fit: cover;
 }
 
@@ -276,16 +276,15 @@ footer ul {
 }
 
 .ss {
-    width: 600px;
+    width: 37%;
     margin: 0 auto;
-    line-height: 30px;
+    line-height: 170%;
     text-align: left;
-    margin: 0px 0px 50px 330px;
+    margin: 1% 0%;
 }
 
 .overview {
     border: 5px solid rgb(112, 112, 112);
     background-color: rgba(246, 247, 255, 0);
-    margin-left: 330px;
-    width: 600px;
+    width: 37%;
 }
