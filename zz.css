@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #F4F4F4;
-    text-align:center;
+    text-align: center;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 1% 0%;
+    padding: 1% 0;
 }
 
 header h1 {
@@ -24,7 +24,7 @@ header h1 {
 }
 
 #c1 .ss,
-#c1 .overview{
+#c1 .overview {
     margin-left: 33%;
 }
 
@@ -32,24 +32,23 @@ header h1 {
     text-align: center;
 }
 
-#c2 {
+#c2,
+#c3,
+#c4 {
     text-align: left;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
+}
+
+#c2 {
     width: 90%;
 }
 
 #c3 {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
     width: 22%;
 }
 
 #c4 {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
     width: 42%;
 }
 
@@ -58,7 +57,7 @@ header h1 {
 }
 
 .container1 {
-    margin: 20% 0% 20% -25%;
+    margin: 20% 0 20% -25%;
 }
 
 section h1 {
@@ -81,8 +80,8 @@ section h2 {
 
 .container50 img {
     width: 30%;
-   height: 10%;
-   object-fit: cover;
+    height: 10%;
+    object-fit: cover;
 }
 
 .yazi img {
@@ -96,14 +95,14 @@ section h2 {
 #sohuto1,
 #sohuto2,
 #yakitori {
-    margin: 10% 0% 1% 0%;
+    margin: 10% 0 1% 0;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     justify-content: center;
 }
 
@@ -112,18 +111,17 @@ section h2 {
 }
 
 .nav-links li:last-child {
-    margin-right: 0%;
+    margin-right: 0;
 }
 
-/*パディングの左右指定、％表記にするフォント崩れる為現在そのまま*/
 .nav-links li a {
     display: inline-block;
-    padding: 3% 150px;
-    border: 3px solid #FCFAFA;
+    padding: 10px 20px;
+    border: 3px solid #ffffff; 
     text-decoration: none;
     color: #F9F9F9;
-    flex: 1;
 }
+
 
 .nav-links li a:hover {
     background-color: #333;
@@ -135,7 +133,7 @@ section h2 {
 }
 
 section {
-    padding: 6% 0%;
+    padding: 6% 0;
 }
 
 h2 {
@@ -170,9 +168,9 @@ footer {
     background-color: #000000;
     color: #fff;
     padding: 1%;
-    bottom: 0%;
+    bottom: 0;
     width: 100%;
-  }
+}
 
 .relative-content {
     margin-bottom: 20px;
@@ -189,16 +187,16 @@ footer p {
 footer ul {
     float: right;
     list-style: none;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .container1 ul {
-    padding: 0%;
+    padding: 0;
 }
 
 .container1 ul li {
-    padding: 2% 0%;
+    padding: 2% 0;
 }
 
 .container1 ul li a {
@@ -226,7 +224,7 @@ footer ul {
 
 .pagetop {
     color: #fff;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     display: none;
     position: fixed;
@@ -252,11 +250,100 @@ footer ul {
     margin: 0 auto;
     line-height: 170%;
     text-align: left;
-    margin: 1% 0%;
+    margin: 1% 0;
 }
 
 .overview {
     border: 5px solid rgb(112, 112, 112);
     background-color: rgba(246, 247, 255, 0);
     width: 37%;
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 150%;
+    }
+
+    section h1 {
+        font-size: 135%;
+    }
+
+    section h2 {
+        font-size: 125%;
+    }
+
+    .container1 p {
+        font-size: 1rem;
+    }
+
+    .nav-links li a {
+        display: inline-block;
+        padding: 1em 2em;
+        border: 0.3vw solid #000000; 
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+
+    form input,
+    form textarea {
+        width: 70%;
+    }
+
+    .relative-content1 img {
+        width: 15%;
+    }
+
+    #box,
+    #box1 {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .ss,
+    .overview {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
+    .container1 p {
+        font-size: 0.8rem;
+    }
+
+    .nav-links li a {
+        padding: 1% 0.5%;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    .relative-content1 img {
+        width: 10%;
+    }
+
+    #box,
+    #box1 {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .ss,
+    .overview {
+        width: 90%;
+    }
 }
