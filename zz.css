@@ -245,7 +245,7 @@ footer ul {
 }
 
 .overview {
-    border: 5px solid rgb(112, 112, 112);
+    border: 2px solid rgb(112, 112, 112);
     background-color: rgba(246, 247, 255, 0);
     width: 37%;
 }
@@ -260,90 +260,53 @@ a.pp:hover{
 }
 
 @media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 150%;
-    }
-
-    section h1 {
-        font-size: 135%;
-    }
-
-    section h2 {
-        font-size: 125%;
-    }
-
-    .container1 p {
-        font-size: 1rem;
-    }
-
-    .nav-links li a {
-        display: inline-block;
-        padding: 10px 20px;
-        border: 3px solid #ffffff; 
-        text-decoration: none;
-        color: #f9f9f9;
-    }
-    
-
-    form input,
-    form textarea {
-        width: 70%;
-    }
-
-    .relative-content1 img {
-        width: 15%;
-    }
-
-    #box,
-    #box1 {
-        margin-left: 10%;
-        width: 80%;
-    }
-
-    .ss,
-    .overview {
-        width: 70%;
-    }
+header h1 {
+    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
+section h1 {
+    font-size: 1.2rem;
+}
 
-    section h1 {
-        font-size: 1.2rem;
-    }
+section h2 {
+    font-size: 1rem;
+}
 
-    section h2 {
-        font-size: 1rem;
-    }
+.container1 p {
+    font-size: 0.8rem;
+}
 
-    .container1 p {
-        font-size: 0.8rem;
-    }
+.nav-links li a {
+    padding: 1% 0.5%;
+}
 
-    .nav-links li a {
-        padding: 1% 0.5%;
-    }
+form input,
+form textarea {
+    width: 90%;
+}
 
-    form input,
-    form textarea {
-        width: 90%;
-    }
+.relative-content1 img {
+    width: 15%;
+}
 
-    .relative-content1 img {
-        width: 10%;
-    }
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
 
-    #box,
-    #box1 {
-        margin-left: 5%;
-        width: 90%;
-    }
+.ss,
+.overview {
+    width: 60%;
+}
 
-    .ss,
-    .overview {
-        width: 50%;
-    }
+#c1 .ss,
+#c1 .overview {
+    margin-left: 20%;
+}
+
+footer p {
+    font-size: 70%;
+}
+
 }
