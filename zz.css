@@ -89,15 +89,6 @@ section h2 {
     height: auto;
 }
 
-#kaisen,
-#toriton,
-#ra-men,
-#sohuto1,
-#sohuto2,
-#yakitori {
-    margin: 10% 0 1% 0;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -257,6 +248,15 @@ footer ul {
     border: 5px solid rgb(112, 112, 112);
     background-color: rgba(246, 247, 255, 0);
     width: 37%;
+}
+
+.pp {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.pp:hover{
+	color: #FF0000;
 }
 
 @media screen and (max-width: 480px) {
