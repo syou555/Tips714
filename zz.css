@@ -259,7 +259,8 @@ a.pp:hover{
 	color: #FF0000;
 }
 
-@media screen and (max-width: 480px) {
+/*iPhone12.13.14対応*/
+@media screen and (max-width: 390px) {
 header h1 {
     font-size: 1.5rem;
 }
@@ -285,10 +286,6 @@ form textarea {
     width: 90%;
 }
 
-.relative-content1 img {
-    width: 15%;
-}
-
 #box,
 #box1 {
     margin-left: 5%;
@@ -307,11 +304,32 @@ form textarea {
 
 footer p {
     font-size: 70%;
+    white-space: nowrap;
 }
 
 #contact,
 .yohaku {
     margin: 2.6% 0% 0% 0%;
 }
+
+#c4 {
+    width: 62%;
+}
+
+.container11 img {
+    width: 60%;
+    height: auto;
+}
+
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
+
 
 }
