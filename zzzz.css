@@ -25,7 +25,7 @@ header h1 {
 
 #c1 .ss,
 #c1 .overview {
-    margin-left: 33%;
+    margin-left: 7%;
 }
 
 #c1 {
@@ -79,7 +79,7 @@ section h2 {
 }
 
 .container50 img {
-    width: 30%;
+    width: 47%;
     height: 10%;
     object-fit: cover;
 }
@@ -235,7 +235,7 @@ footer ul {
 }
 
 .ss {
-    width: 37%;
+    width: 87%;
     margin: 0 auto;
     line-height: 170%;
     text-align: left;
@@ -245,7 +245,7 @@ footer ul {
 .overview {
     border: 2px solid rgb(112, 112, 112);
     background-color: rgba(246, 247, 255, 0);
-    width: 37%;
+    width: 87%;
 }
 
 @media screen and (max-width: 480px) {
@@ -286,16 +286,36 @@ form textarea {
 
 .ss,
 .overview {
-    width: 60%;
+    width: 90%;
 }
 
 #c1 .ss,
 #c1 .overview {
-    margin-left: 20%;
+    margin-left: 6%;
 }
 
 footer p {
     font-size: 70%;
+    white-space: nowrap;
+}
+
+#c4 {
+    width: 62%;
+}
+
+.container11 img {
+    width: 60%;
+    height: auto;
+}
+    
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+    
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
 }
 
 }
