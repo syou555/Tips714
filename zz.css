@@ -49,7 +49,7 @@ header h1 {
 }
 
 #c4 {
-    width: 42%;
+    width: 60%;
 }
 
 #services {
@@ -74,7 +74,7 @@ section h2 {
 }
 
 .container11 img {
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
@@ -87,6 +87,10 @@ section h2 {
 .yazi img {
     width: 2%;
     height: auto;
+}
+
+.yazi {
+    font-size: 150%;
 }
 
 .nav-links {
@@ -259,7 +263,6 @@ a.pp:hover{
 	color: #FF0000;
 }
 
-
 /*iPhone11.XR.11proMax.XSMax対応*/
 /*iPhone12proMax.13proMax.14Plus対応*/
 @media screen and (max-width: 428px) {
@@ -386,15 +389,15 @@ a.pp:hover{
     
     #contact,
     .yohaku {
-        margin: 21% 0% 0% 0%;
+        margin: 5% 0% 0% 0%;
     }
     
     #c4 {
-        width: 62%;
+        width: 90%;
     }
     
     .container11 img {
-        width: 60%;
+        width: 90%;
         height: auto;
     }
     
