@@ -359,6 +359,23 @@ hr {
         width: 13%;
         margin: 0% 0% 0% 60%;
     }
+    
+    .circle {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        margin: 2% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 20px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 67%;
+        margin: -4% 0% 0% 10%
+    }
 }
 
 /*iPhone12.13.14対応*/
@@ -433,6 +450,23 @@ hr {
         width: 13%;
         margin: 0% 0% 0% 60%;
     }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 3% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 66%;
+        margin: -4% 0% 0% 10%
+    }
 }  
 
 @media screen and (max-width: 375px) {
@@ -505,6 +539,23 @@ hr {
     .relative-content1 img {
         width: 13%;
         margin: 0% 0% 0% 60%;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 3% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 60%;
+        margin: -4% 0% 0% 13%
     }
 }
     
@@ -579,5 +630,22 @@ hr {
     .relative-content1 img {
         width: 13%;
         margin: 0% 0% 0% 60%;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 4% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 60%;
+        margin: -4% 0% 0% 13%
     }
 }
