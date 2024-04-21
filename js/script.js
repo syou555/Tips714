@@ -1,63 +1,83 @@
-const shops = [
-    { name: "トリトン", link: "https://syou555.github.io/Tips714/" },
-    { name: "みなとや", link: "https://syou555.github.io/Tips714/shops/minatoya.html" },
-    { name: "信玄", link: "https://syou555.github.io/Tips714/shops/singen.html" },
-    { name: "ニセコアンヌプリ道の駅", link: "https://syou555.github.io/Tips714/shops/nisekoannupurimitinoeki.html" },
-    { name: "Ruhiel", link: "https://syou555.github.io/Tips714/shops/Ruhiel.html" },
-    { name: "小舟", link: "https://syou555.github.io/Tips714/shops/kobunr.html" },
-    { name: "舌とハラミ肉猿", link: "https://syou555.github.io/Tips714/shops/sitatoharami.html" },
-    { name: "のぼりべつクマ牧場", link: "https://syou555.github.io/Tips714/shops/noboribetukumabokuzyou.html" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" },
-    { name: "#", link: "https://example.com/shop3" }
-];
+<!DOCTYPE html>
+<html lang=“ja”>
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>検索ページ</title>
+        <link rel="icon" type="image/jpg" href="img/rogo2.jpg">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+            jQuery('.pagetop').fadeIn(duration);
+            } else {
+            jQuery('.pagetop').fadeOut(duration);
+            }
+            });
 
-function normalize(str) {
-    return str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
-        return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
-    });
-}
+            jQuery('.pagetop').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+            });
+        </script>
+    </head>
 
-document.getElementById("searchInput").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        search();
-    }
-});
+    <body>
+        <header>
+            <div class="container">
+                <h1>検索</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="List of shops.html">店舗一覧</a></li>
+                        <li><a href="search.html">検索</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-function search() {
-    const searchTerm = normalize(document.getElementById("searchInput").value).toLowerCase();
-    const searchResults = document.getElementById("searchResults");
-    searchResults.innerHTML = "";
+        <body>
+            <p class="search1">当サイトでは部分一致検索方法を採用しています。</p>
+            <p class="search1">『札幌ラーメン店』を検索したい場合『札幌』や</p>
+            <p class="search1">『ラーメン』など文字が一致している箇所が</p>
+            <p class="search1">あればヒットします。</p>
+            <input type="text" id="searchInput" placeholder="お店を検索...">
+            <button onclick="search()">検索</button>
+        
+            <ul id="searchResults"></ul>
+        
+            <div id="noResultsMessage" style="display: none;">該当なし</div>
 
-    if (searchTerm.trim() === "") {
-        document.getElementById("noResultsMessage").style.display = "none";
-        return; // 入力が空の場合は何もしない
-    }
+            <input type="text" id="searchInput" placeholder="お店を検索..." onfocus="this.blur()">
+        
+            <script src="js/script.js"></script>
+        </body>
+        
 
-    const filteredShops = shops.filter(shop => normalize(shop.name).toLowerCase().includes(searchTerm));
-    if (filteredShops.length === 0) {
-        document.getElementById("noResultsMessage").style.display = "block";
-    } else {
-        document.getElementById("noResultsMessage").style.display = "none";
-        filteredShops.forEach(shop => {
-            const listItem = document.createElement("li");
-            const link = document.createElement("a");
-            link.textContent = shop.name;
-            link.href = shop.link;
-            listItem.appendChild(link);
-            searchResults.appendChild(listItem);
-        });
-    }
-}
-
+        <footer>
+            <div class="relative-content">
+                <ul><!--
+                    <a href="#">
+                        <img src="#" alt="Twitter"></a>-->
+                    <a href="https://www.instagram.com/shop_evaluation_s?igsh=ZmJyMjNoNGw3N21m" class="relative-content1">
+                        <img src="img/insutagram.jpg" alt="Instagram"></a>
+                 <!--   <a href="#">
+                        <img src="#" alt="Facebook"></a>-->
+                </ul>
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="pagetop">↑</div>
+    </body>
+</html>
