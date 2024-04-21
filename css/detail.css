@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1% 0;
+}
+
+header h1 {
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+
+#c1 .ss,
+#c1 .overview {
+    margin-left: 7%;
+}
+
+#c1 {
+    text-align: center;
+}
+
+#c2,
+#c3,
+#c4 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#c2 {
+    width: 90%;
+}
+
+#c3 {
+    width: 22%;
+}
+
+#c4 {
+    width: 42%;
+}
+
+#services {
+    margin-left: 23%;
+}
+
+.container1 {
+    margin: 20% 0 20% -25%;
+}
+
+section h1 {
+    font-size: 270%;
+}
+
+section h2 {
+    font-size: 250%;
+}
+
+.container1 p {
+    font-size: 150%;
+    color: #fff;
+}
+
+.container11 img {
+    width: 40%;
+    height: auto;
+}
+
+.container50 img {
+    width: 47%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 3%;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #F9F9F9;
+    white-space:nowrap;
+    font-size: 160%;
+}
+
+
+.nav-links li a:hover {
+    background-color: #333;
+    color: #E40505;
+}
+
+.container1 li a:hover {
+    color: #E40505;
+}
+
+section {
+    padding: 6% 0;
+}
+
+h2 {
+    margin-bottom: 1%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1%;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 0.5%;
+    margin-bottom: 1%;
+}
+
+div button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1% 1.5%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1%;
+    bottom: 0;
+    width: 100%;
+}
+
+.relative-content {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 100%;
+}
+
+.karte-temp-text span {
+    font-weight: bold;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 ul {
+    padding: 0;
+}
+
+.container1 ul li {
+    padding: 2% 0;
+}
+
+.container1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.relative-content1 img {
+    width: 20%;
+}
+
+#box {
+    border: 1px solid gray;
+    background-color: rgb(246, 247, 255);
+    margin-left: 27%;
+    width: 46.2%;
+}
+
+#box1 {
+    border: 1px solid gray;
+    background-color: rgb(33, 66, 252);
+    margin-left: 27%;
+    width: 46.2%;
+}
+
+.pagetop {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagetop:hover {
+    color: #fff !important;
+    background-color: #ED702B;
+    text-decoration: none;
+}
+
+.ss {
+    width: 87%;
+    margin: 0 auto;
+    line-height: 170%;
+    text-align: left;
+    margin: 1% 0;
+}
+
+.overview {
+    border: 2px solid rgb(112, 112, 112);
+    background-color: rgba(246, 247, 255, 0);
+    width: 87%;
+}
+
+@media screen and (max-width: 480px) {
+header h1 {
+    font-size: 1.5rem;
+}
+
+section h1 {
+    font-size: 1.2rem;
+}
+
+section h2 {
+    font-size: 1rem;
+}
+
+.container1 p {
+    font-size: 0.8rem;
+}
+
+.nav-links li a {
+    padding: 1% 0.5%;
+    white-space:nowrap;
+    font-size: 90%;
+}
+
+form input,
+form textarea {
+    width: 90%;
+}
+
+.relative-content1 img {
+    width: 15%;
+}
+
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.ss,
+.overview {
+    width: 90%;
+}
+
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
+
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
+
+#c4 {
+    width: 62%;
+}
+
+.container11 img {
+    width: 60%;
+    height: auto;
+}
+    
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+    
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
+
+}

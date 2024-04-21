@@ -1,0 +1,585 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1% 0;
+}
+
+header h1 {
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 3%;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 3px solid #ffffff; 
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+
+.nav-links li a:hover {
+    background-color: #333;
+    color: #E40505;
+}
+
+.container1 li a:hover {
+    color: #E40505;
+}
+
+div button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1% 1.5%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1%;
+    bottom: 0;
+    width: 100%;
+    position: sticky;
+    top: 100vh;
+}
+
+.relative-content {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 100%;
+}
+
+.karte-temp-text span {
+    font-weight: bold;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 ul {
+    padding: 0;
+}
+
+.container1 ul li {
+    padding: 2% 0;
+}
+
+.container1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.relative-content1 img {
+    width: 25%;
+}
+
+.pagetop {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagetop:hover {
+    color: #fff !important;
+    background-color: #ED702B;
+    text-decoration: none;
+}
+
+.pp {
+    /*text-decoration: none;*/
+    color: #557af5;
+}
+
+a.pp:hover{
+	color: #FF0000;
+}
+
+hr {
+    margin: 0% 0% 5% 0%;
+    border: 2px solid #555454; 
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aeff; /* 枠の色を白色に変更 */
+    line-height: 35px;
+    margin: 0% 0% -2% 0%;
+}
+
+#circle1 {
+    font-size: 30px;
+    color: #00aeff;
+}
+
+.kinnsi {
+    font-size: 150%;
+}
+
+/*ここから検索*/
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 200px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.search1 {
+    margin: 0% 0% 0% 38%; /* 左右の余白を自動的に調整して中央に寄せる */
+    text-align-last: left; /* 最終行のテキストを左揃えにする */
+}
+
+/*iPhone11.XR.11proMax.XSMax対応*/
+/*iPhone12proMax.13proMax.14Plus対応*/
+@media screen and (max-width: 428px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
+    .container1 p {
+        font-size: 0.8rem;
+    }
+
+    .nav-links li a {
+        padding: 1% 0%;
+        border: 1px solid #ffffff; 
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    #box,
+    #box1 {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .ss,
+    .overview {
+        width: 90%;
+    }
+
+    #c1 .ss,
+    #c1 .overview {
+        margin-left: 6%;
+    }
+
+    footer p {
+        font-size: 70%;
+        white-space: nowrap;
+    }
+
+    #contact,
+    .yohaku {
+        margin: 22% 0% 0% 0%;
+    }
+
+    #c4 {
+        width: 62%;
+    }
+
+    .container11 img {
+        width: 60%;
+        height: auto;
+    }
+
+    .yazi img {
+        width: 2%;
+        height: auto;
+    }
+
+    .relative-content1 img {
+        width: 13%;
+        margin: 0% 0% 0% 60%;
+    }
+    
+    .circle {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        margin: 2% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 20px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 67%;
+        margin: -4% 0% 0% 10%
+    }
+
+    .news-list .item a{
+        flex-wrap: wrap;
+    }
+    .news-list .item .date{
+        min-width: 100px;
+    }
+    .news-list .item .title{
+        margin-top: 10px;
+    }
+
+    .search1 {
+        margin: 0% 0% 0% 5%; /* 左右の余白を自動的に調整して中央に寄せる */
+    }
+}
+
+/*iPhone12.13.14対応*/
+@media screen and (max-width: 390px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    section h1 {
+        font-size: 1.2rem;
+    }
+    
+    section h2 {
+        font-size: 1rem;
+    }
+    
+    .container1 p {
+        font-size: 0.8rem;
+    }
+    
+    .nav-links li a {
+        padding: 1% 0%;
+        border: 1px solid #ffffff; 
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+    
+    #box,
+    #box1 {
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .ss,
+    .overview {
+        width: 90%;
+    }
+    
+    #c1 .ss,
+    #c1 .overview {
+        margin-left: 6%;
+    }
+    
+    footer p {
+        font-size: 70%;
+        white-space: nowrap;
+    }
+    
+    #contact,
+    .yohaku {
+        margin: 5% 0% 0% 0%;
+    }
+    
+    #c4 {
+        width: 90%;
+    }
+    
+    .container11 img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .yazi img {
+        width: 2%;
+        height: auto;
+    }
+    
+    .relative-content1 img {
+        width: 13%;
+        margin: 0% 0% 0% 60%;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 3% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 66%;
+        margin: -4% 0% 0% 10%
+    }
+
+    .search1 {
+        margin: 0% 0% 0% 5%; /* 左右の余白を自動的に調整して中央に寄せる */
+    }
+}  
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+        
+    section h1 {
+        font-size: 1.2rem;
+    }
+        
+    section h2 {
+        font-size: 1rem;
+    }
+        
+    .container1 p {
+        font-size: 0.8rem;
+    }
+        
+    .nav-links li a {
+        padding: 1% 0%;
+        border: 1px solid #ffffff; 
+    }
+        
+    form input,
+    form textarea {
+        width: 90%;
+    }
+        
+    #box,
+    #box1 {
+        margin-left: 5%;
+        width: 90%;
+    }
+        
+    .ss,
+    .overview {
+        width: 90%;
+    }
+        
+    #c1 .ss,
+    #c1 .overview {
+        margin-left: 6%;
+    }
+        
+    footer p {
+        font-size: 70%;
+        white-space: nowrap;
+    }
+        
+    #contact,
+    .yohaku {
+        margin: 20% 0% 0% 0%;
+    }
+        
+    #c4 {
+        width: 62%;
+    }
+        
+    .container11 img {
+        width: 60%;
+        height: auto;
+    }
+        
+    .yazi img {
+        width: 2%;
+        height: auto;
+    }
+        
+    .relative-content1 img {
+        width: 13%;
+        margin: 0% 0% 0% 60%;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 3% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 60%;
+        margin: -4% 0% 0% 13%
+    }
+
+    .search1 {
+        margin: 0% 0% 0% 1%; /* 左右の余白を自動的に調整して中央に寄せる */
+    }
+}
+    
+/*Android対応*/
+@media screen and (max-width: 360px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h1 {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
+    .container1 p {
+        font-size: 0.8rem;
+    }
+
+    .nav-links li a {
+        padding: 1% 0%;
+        border: 1px solid #ffffff; 
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    #box,
+    #box1 {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .ss,
+    .overview {
+        width: 90%;
+    }
+
+    #c1 .ss,
+    #c1 .overview {
+        margin-left: 6%;
+    }
+
+    footer p {
+        font-size: 70%;
+        white-space: nowrap;
+    }
+
+    #contact,
+    .yohaku {
+        margin: 11% 0% 0% 0%;
+    }
+
+    #c4 {
+        width: 62%;
+    }
+
+    .container11 img {
+        width: 60%;
+        height: auto;
+    }
+
+    .yazi img {
+        width: 2%;
+        height: auto;
+    }
+
+    .relative-content1 img {
+        width: 13%;
+        margin: 0% 0% 0% 60%;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        margin: 4% 0% 0% 0%;
+      }
+
+      #circle1 {
+        font-size: 17px;
+        color: #00aeff;
+    }
+    
+    .kinnsi2{
+        font-size: 60%;
+        margin: -4% 0% 0% 13%
+    }
+
+    .search1 {
+        margin: 0% 0% 0% 0%; /* 左右の余白を自動的に調整して中央に寄せる */
+    }
+}
+
