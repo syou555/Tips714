@@ -111,8 +111,8 @@ section h2 {
 
 .nav-links li a {
     display: inline-block;
-    padding: 10px 50px;
-    border: 3px solid #ffffff; 
+    padding: 10px 20px; /* ボタンの上下左右の余白を調整 */
+    border: 3px solid #ffffff; /* ボタンの境界線を調整 */
     text-decoration: none;
     color: #F9F9F9;
 }
@@ -353,8 +353,10 @@ hr {
     }
 
     .nav-links li a {
-        padding: 1% 0%;
-        border: 1px solid #ffffff; 
+        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
     }
 
     form input,
@@ -454,8 +456,10 @@ hr {
     }
     
     .nav-links li a {
-        padding: 1% 0%;
-        border: 1px solid #ffffff; 
+        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
     }
 
     form input,
@@ -544,8 +548,10 @@ hr {
     }
         
     .nav-links li a {
-        padding: 1% 0%;
-        border: 1px solid #ffffff; 
+        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
     }
         
     form input,
@@ -635,8 +641,10 @@ hr {
     }
 
     .nav-links li a {
-        padding: 1% 0%;
-        border: 1px solid #ffffff; 
+        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
     }
 
     form input,
