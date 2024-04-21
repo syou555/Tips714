@@ -49,7 +49,7 @@
             <p class="search1">『札幌ラーメン店』を検索したい場合『札幌』や</p>
             <p class="search1">『ラーメン』など文字が一致している箇所が</p>
             <p class="search1">あればヒットします。</p>
-            <input type="text" id="searchInput" placeholder="お店を検索..." onfocus="this.blur()">
+            <input type="text" id="searchInput" placeholder="お店を検索...">
             <button onclick="search()">検索</button>
         
             <ul id="searchResults"></ul>
