@@ -109,6 +109,7 @@ section h2 {
     display: inline-block;
     text-decoration: none;
     color: #F9F9F9;
+    white-space:nowrap;
 }
 
 
@@ -267,6 +268,7 @@ section h2 {
 
 .nav-links li a {
     padding: 1% 0.5%;
+    white-space:nowrap;
 }
 
 form input,
