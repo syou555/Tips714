@@ -80,7 +80,7 @@ section h2 {
 
 .container50 img {
     width: 47%;
-    height: 10%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -110,6 +110,7 @@ section h2 {
     text-decoration: none;
     color: #F9F9F9;
     white-space:nowrap;
+    font-size: 160%;
 }
 
 
@@ -269,6 +270,7 @@ section h2 {
 .nav-links li a {
     padding: 1% 0.5%;
     white-space:nowrap;
+    font-size: 90%;
 }
 
 form input,
