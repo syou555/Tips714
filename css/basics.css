@@ -32,6 +32,12 @@ header h1 {
     text-align: center;
 }
 
+#c2 {
+    text-align: left;
+    margin: 0% 24.8%;
+    margin-right: auto;
+}
+
 #c2,
 #c3,
 #c4 {
@@ -50,6 +56,28 @@ header h1 {
 
 #c4 {
     width: 60%;
+}
+
+#c4 .supes {
+    margin: 0% 10% 0% 0%;
+}
+
+#c4 .supes2 {
+    margin: 0% 8% 0% 0%;
+}
+
+#c4 .supes3 {
+    margin: 0% 12% 0% 0%;
+}
+
+#c4 .supes4 {
+    margin: 0% 1% 0% 0%;
+}
+
+#c5 {
+    text-align: left;
+    margin: 0% 30.7%;
+    margin-right: auto;
 }
 
 #services {
@@ -179,6 +207,10 @@ footer p {
     font-weight: bold;
 }
 
+.tex99 span {
+    font-weight: bold;
+}
+
 footer ul {
     float: right;
     list-style: none;
@@ -255,7 +287,6 @@ footer ul {
 }
 
 .pp {
-    /*text-decoration: none;*/
     color: #557af5;
 }
 
@@ -330,387 +361,389 @@ hr {
     width: 100%;
   }
   .news-list .item a:hover .title{
-    color: #00F;
+    color: rgb(255, 0, 0);
   }
 
 /*iPhone11.XR.11proMax.XSMax対応*/
 /*iPhone12proMax.13proMax.14Plus対応*/
 @media screen and (max-width: 428px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
+header h1 {
+    font-size: 1.5rem;
+}
 
-    section h1 {
-        font-size: 1.2rem;
-    }
+section h1 {
+    font-size: 1.2rem;
+}
 
-    section h2 {
-        font-size: 1rem;
-    }
+section h2 {
+    font-size: 1rem;
+}
 
-    .container1 p {
-        font-size: 0.8rem;
-    }
+.container1 p {
+    font-size: 0.8rem;
+}
 
-    .nav-links li a {
-        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
-        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
-        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
-        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
-    }
+.nav-links li a {
+    padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+    border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+    height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+    line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
+}
 
-    form input,
-    form textarea {
-        width: 90%;
-    }
+form input,
+form textarea {
+    width: 90%;
+}
 
-    #box,
-    #box1 {
-        margin-left: 5%;
-        width: 90%;
-    }
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
 
-    .ss,
-    .overview {
-        width: 90%;
-    }
+.ss,
+.overview {
+    width: 90%;
+}
 
-    #c1 .ss,
-    #c1 .overview {
-        margin-left: 6%;
-    }
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
 
-    footer p {
-        font-size: 70%;
-        white-space: nowrap;
-    }
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
 
-    #contact,
-    .yohaku {
-        margin: 22% 0% 0% 0%;
-    }
+#contact,
+.yohaku {
+    margin: 22% 0% 0% 0%;
+}
 
-    #c4 {
-        width: 62%;
-    }
+#c4 {
+    width: 62%;
+}
 
-    .container11 img {
-        width: 60%;
-        height: auto;
-    }
+.container11 img {
+    width: 60%;
+    height: auto;
+}
 
-    .yazi img {
-        width: 2%;
-        height: auto;
-    }
+.yazi img {
+    width: 2%;
+    height: auto;
+}
 
-    .relative-content1 img {
-        width: 13%;
-        margin: 0% 0% 0% 60%;
-    }
-    
-    .circle {
-        width: 25px;
-        height: 25px;
-        line-height: 22px;
-        margin: 2% 0% 0% 0%;
-      }
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
 
-      #circle1 {
-        font-size: 20px;
-        color: #00aeff;
-    }
-    
-    .kinnsi2{
-        font-size: 67%;
-        margin: -4% 0% 0% 10%
-    }
+.circle {
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    margin: 2% 0% 0% 0%;
+}
 
-    .news-list .item a{
-        flex-wrap: wrap;
-      }
-      .news-list .item .date{
-        min-width: 100px;
-      }
-      .news-list .item .title{
-        margin-top: 10px;
-      }
+#circle1 {
+    font-size: 20px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 67%;
+    margin: -4% 0% 0% 10%
+}
+
+.news-list .item a{
+    flex-wrap: wrap;
+}
+
+.news-list .item .date{
+    min-width: 100px;
+}
+
+.news-list .item .title{
+    margin-top: 10px;
+}
 }
 
 /*iPhone12.13.14対応*/
 @media screen and (max-width: 390px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-    
-    section h1 {
-        font-size: 1.2rem;
-    }
-    
-    section h2 {
-        font-size: 1rem;
-    }
-    
-    .container1 p {
-        font-size: 0.8rem;
-    }
-    
-    .nav-links li a {
-        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
-        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
-        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
-        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
-    }
+header h1 {
+    font-size: 1.5rem;
+}
 
-    form input,
-    form textarea {
-        width: 90%;
-    }
-    
-    #box,
-    #box1 {
-        margin-left: 5%;
-        width: 90%;
-    }
-    
-    .ss,
-    .overview {
-        width: 90%;
-    }
-    
-    #c1 .ss,
-    #c1 .overview {
-        margin-left: 6%;
-    }
-    
-    footer p {
-        font-size: 70%;
-        white-space: nowrap;
-    }
-    
-    #contact,
-    .yohaku {
-        margin: 5% 0% 0% 0%;
-    }
-    
-    #c4 {
-        width: 90%;
-    }
-    
-    .container11 img {
-        width: 90%;
-        height: auto;
-    }
-    
-    .yazi img {
-        width: 2%;
-        height: auto;
-    }
-    
-    .relative-content1 img {
-        width: 13%;
-        margin: 0% 0% 0% 60%;
-    }
+section h1 {
+    font-size: 1.2rem;
+}
 
-    .circle {
-        width: 20px;
-        height: 20px;
-        line-height: 17px;
-        margin: 3% 0% 0% 0%;
-      }
+section h2 {
+    font-size: 1rem;
+}
 
-      #circle1 {
-        font-size: 17px;
-        color: #00aeff;
-    }
-    
-    .kinnsi2{
-        font-size: 66%;
-        margin: -4% 0% 0% 10%
-    }
+.container1 p {
+    font-size: 0.8rem;
+}
+
+.nav-links li a {
+    padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+    border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+    height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+    line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
+}
+
+form input,
+form textarea {
+    width: 90%;
+}
+
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.ss,
+.overview {
+    width: 90%;
+}
+
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
+
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
+
+#contact,
+.yohaku {
+    margin: 5% 0% 0% 0%;
+}
+
+#c4 {
+    width: 90%;
+}
+
+.container11 img {
+    width: 90%;
+    height: auto;
+}
+
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 66%;
+    margin: -4% 0% 0% 10%
+}
 }  
 
 @media screen and (max-width: 375px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-        
-    section h1 {
-        font-size: 1.2rem;
-    }
-        
-    section h2 {
-        font-size: 1rem;
-    }
-        
-    .container1 p {
-        font-size: 0.8rem;
-    }
-        
-    .nav-links li a {
-        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
-        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
-        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
-        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
-    }
-        
-    form input,
-    form textarea {
-        width: 90%;
-    }
-        
-    #box,
-    #box1 {
-        margin-left: 5%;
-        width: 90%;
-    }
-        
-    .ss,
-    .overview {
-        width: 90%;
-    }
-        
-    #c1 .ss,
-    #c1 .overview {
-        margin-left: 6%;
-    }
-        
-    footer p {
-        font-size: 70%;
-        white-space: nowrap;
-    }
-        
-    #contact,
-    .yohaku {
-        margin: 20% 0% 0% 0%;
-    }
-        
-    #c4 {
-        width: 62%;
-    }
-        
-    .container11 img {
-        width: 60%;
-        height: auto;
-    }
-        
-    .yazi img {
-        width: 2%;
-        height: auto;
-    }
-        
-    .relative-content1 img {
-        width: 13%;
-        margin: 0% 0% 0% 60%;
-    }
+header h1 {
+    font-size: 1.5rem;
+}
     
-    .circle {
-        width: 20px;
-        height: 20px;
-        line-height: 17px;
-        margin: 3% 0% 0% 0%;
-      }
+section h1 {
+    font-size: 1.2rem;
+}
+    
+section h2 {
+    font-size: 1rem;
+}
+    
+.container1 p {
+    font-size: 0.8rem;
+}
+    
+.nav-links li a {
+    padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+    border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+    height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+    line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
+}
+    
+form input,
+form textarea {
+    width: 90%;
+}
+    
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
+    
+.ss,
+.overview {
+    width: 90%;
+}
+    
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
+    
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
+    
+#contact,
+.yohaku {
+    margin: 20% 0% 0% 0%;
+}
+    
+#c4 {
+    width: 62%;
+}
+    
+.container11 img {
+    width: 60%;
+    height: auto;
+}
+    
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+    
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
 
-      #circle1 {
-        font-size: 17px;
-        color: #00aeff;
-    }
-    
-    .kinnsi2{
-        font-size: 60%;
-        margin: -4% 0% 0% 13%
-    }
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
+}
 }
     
 /*Android対応*/
 @media screen and (max-width: 360px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
+header h1 {
+    font-size: 1.5rem;
+}
 
-    section h1 {
-        font-size: 1.2rem;
-    }
+section h1 {
+    font-size: 1.2rem;
+}
 
-    section h2 {
-        font-size: 1rem;
-    }
+section h2 {
+    font-size: 1rem;
+}
 
-    .container1 p {
-        font-size: 0.8rem;
-    }
+.container1 p {
+    font-size: 0.8rem;
+}
 
-    .nav-links li a {
-        padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
-        border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
-        height: 30px; /* スマートフォン向けにボタンの高さを調整 */
-        line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
-    }
+.nav-links li a {
+    padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+    border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+    height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+    line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
+}
 
-    form input,
-    form textarea {
-        width: 90%;
-    }
+form input,
+form textarea {
+    width: 90%;
+}
 
-    #box,
-    #box1 {
-        margin-left: 5%;
-        width: 90%;
-    }
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
 
-    .ss,
-    .overview {
-        width: 90%;
-    }
+.ss,
+.overview {
+    width: 90%;
+}
 
-    #c1 .ss,
-    #c1 .overview {
-        margin-left: 6%;
-    }
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
 
-    footer p {
-        font-size: 70%;
-        white-space: nowrap;
-    }
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
 
-    #contact,
-    .yohaku {
-        margin: 11% 0% 0% 0%;
-    }
+#contact,
+.yohaku {
+    margin: 11% 0% 0% 0%;
+}
 
-    #c4 {
-        width: 62%;
-    }
+#c4 {
+    width: 62%;
+}
 
-    .container11 img {
-        width: 60%;
-        height: auto;
-    }
+.container11 img {
+    width: 60%;
+    height: auto;
+}
 
-    .yazi img {
-        width: 2%;
-        height: auto;
-    }
+.yazi img {
+    width: 2%;
+    height: auto;
+}
 
-    .relative-content1 img {
-        width: 13%;
-        margin: 0% 0% 0% 60%;
-    }
-    
-    .circle {
-        width: 20px;
-        height: 20px;
-        line-height: 17px;
-        margin: 4% 0% 0% 0%;
-      }
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
 
-      #circle1 {
-        font-size: 17px;
-        color: #00aeff;
-    }
-    
-    .kinnsi2{
-        font-size: 60%;
-        margin: -4% 0% 0% 13%
-    }
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 4% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
+}
 }
