@@ -250,7 +250,29 @@ footer ul {
     width: 87%;
 }
 
-@media screen and (max-width: 480px) {
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aeff; /* 枠の色を白色に変更 */
+    line-height: 35px;
+    margin: 0% 0% -2% 0%;
+}
+
+#circle1 {
+    font-size: 30px;
+    color: #00aeff;
+}
+
+.kinnsi {
+    font-size: 150%;
+}
+
+.relative-content1 img {
+    width: 25%;
+}
+
+@media screen and (max-width: 428px) {
 header h1 {
     font-size: 1.5rem;
 }
@@ -321,6 +343,82 @@ footer p {
 .relative-content1 img {
     width: 13%;
     margin: 0% 0% 0% 60%;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    margin: 2% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 20px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 67%;
+    margin: -4% 0% 0% 10%
+}
+
+}
+
+@media screen and (max-width: 390px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+     #circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 66%;
+    margin: -4% 0% 0% 10%
+}
+
+}
+
+@media screen and (max-width: 375px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
+}
+
+}
+@media screen and (max-width: 360px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 4% 0% 0% 0%;
+}
+
+  #circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
 }
 
 }
