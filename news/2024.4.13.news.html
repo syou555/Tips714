@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>お知らせページ</title>
+        <link rel="icon" type="image/jpg" href="img/rogo2.jpg">
+        <link rel="stylesheet" href="../css/news.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+            jQuery('.pagetop').fadeIn(duration);
+            } else {
+            jQuery('.pagetop').fadeOut(duration);
+            }
+            });
+
+            jQuery('.pagetop').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>お知らせページ</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <h2 class="yohaku">レイアウトの変更</h2>
+        <p>お店詳細ページのボタンを変更しました。</p>
+        <p><span>変更箇所</span></p>
+        <div id="c1">
+            <nav class="syousai" id="c2">
+                <li>お店詳細ページの「ホーム」、「お店一覧」、「お問合せ」の３つのボタンのを廃止</li>
+                <li>お店詳細ページに「戻る」ボタンを追加</li>
+                <li>戻るボタン押した際に前のページに戻るように変更</li>
+                <li>戻るボタン押した際にページ上部に戻らないように変更</li>
+            </nav>
+        </div>        
+
+        <footer>
+            <div class="relative-content">
+                <ul><!--
+                    <a href="#">
+                        <img src="#" alt="Twitter"></a>-->
+                    <a href="https://www.instagram.com/shop_evaluation_s?igsh=ZmJyMjNoNGw3N21m" class="relative-content1">
+                        <img src="../img/insutagram.jpg" alt="Instagram"></a>
+                 <!--   <a href="#">
+                        <img src="#" alt="Facebook"></a>-->
+                </ul>
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="pagetop">↑</div>
+    </body>
+</html>
