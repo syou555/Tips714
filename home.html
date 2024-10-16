@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ホームページ</title>
+        <link rel="icon" type="image/jpg" href="img/rogo2.jpg">
+        <link rel="stylesheet" href="css/basics.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+            jQuery('.pagetop').fadeIn(duration);
+            } else {
+            jQuery('.pagetop').fadeOut(duration);
+            }
+            });
+
+            jQuery('.pagetop').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>ホーム</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="home.html">ホーム</a></li>
+                        <li><a href="List of shops.html">店舗一覧</a></li>
+                        <li><a href="search.html">検索</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="container11" div id="c1">
+                <h1>サイト紹介</h1>
+                <img src="img/bosyuu.jpg" alt="エラー 画像が表示できません">
+                <p class="tex" id="c4">当サイトではお店の記録を残すために個人が投稿しております。</p>
+                <p class="tex" id="c4">投稿するお店等の偏りがあるかと思いますがご了承ください。</p>
+            </div>
+        </section>
+
+        <section id="abou">
+            <div class="container11" div id="c1">
+                <h2>サイトの使い方</h2>
+                <p class="tex99"  id="c4"><span class="supes">ホーム：</span>サイトの紹介、使い方説明、お知らせが記載されています。</p>
+                <p class="tex99"  id="c5">サイトを更新したらお知らせしております。ご覧になってください。</p>
+                <p class="tex99"  id="c4"><span class="supes2">店舗一覧：</span>お店(グルメやレンジャー施設など)の一覧が記載されています。</p>
+                <p class="tex99"  id="c5">こちらでお店を探してみてください。</p>
+                <p class="tex99"  id="c4"><span class="supes3">検索：</span>お店の検索ができます。</p>
+                <p class="tex99"  id="c5">店舗名と住所どちらでも検索可能となっております。また部分一致機能を搭載しておりますので、</p>
+                <p class="tex99"  id="c5">店舗名や住所を全て入力しなくてもヒットします。</p>
+                <p class="tex99"  id="c4"><span class="supes4">↑(スクロールバー):</span>1番上に戻ってくれます。</p>
+                <p class="tex99"  id="c5">1番上に戻る際にご使用ください。</p>
+                
+            </div>
+        </section>
+
+        <!--ここからお知らせ-->
+        <div>
+            <ul class="news-list">
+                <li class="item">
+                    <a href="news/2024.4.27.news.html">
+                        <p class="date">2024/4/27</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">HPのレイアウトの変更</p>
+                        <p class="title">お店の詳細情報の追加</p>
+                        <p class="title">検索フォームの機能追加</p>
+                        <p class="title">お店の追加</p>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="news/2024.4.22.news.html">
+                        <p class="date">2024/4/22</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">レイアウトの変更</p>
+                        <p class="title">検索フォームの追加</p>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="news/2024.4.21.news.html">
+                        <p class="date">2024/4/21</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">レイアウトの修正</p>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="news/2024.4.14.news.html">
+                        <p class="date">2024/4/14</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">お知らせバーの追加</p>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="news/2024.4.13.news.html">
+                        <p class="date">2024/4/13</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">レイアウトの変更</p>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="news/2024.4.12.news.html">
+                        <p class="date">2024/4/12</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="title">お店の追加</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            <div class="relative-content">
+                <ul><!--
+                    <a href="#">
+                        <img src="#" alt="Twitter"></a>-->
+                    <a href="https://www.instagram.com/shop_evaluation_s?igsh=ZmJyMjNoNGw3N21m" class="relative-content1">
+                        <img src="img/insutagram.jpg" alt="Instagram"></a>
+                 <!--   <a href="#">
+                        <img src="#" alt="Facebook"></a>-->
+                </ul>
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="pagetop">↑</div>
+    </body>
+</html>
