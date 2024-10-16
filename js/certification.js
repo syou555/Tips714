@@ -4,10 +4,20 @@
 let failedAttempts = parseInt(localStorage.getItem("failedAttempts")) || 0;
 let lockoutTime = parseInt(localStorage.getItem("lockoutTime")) || null;
 
-document.getElementById("searchButton").addEventListener("click", function() {
-    // 現在の時刻
-    const currentTime = new Date().getTime();
+// ログイン時間を取得
+let loginTime = parseInt(localStorage.getItem("loginTime")) || null;
 
+// ページが読み込まれたときに1時間経過しているかチェック
+const currentTime = new Date().getTime();
+if (loginTime && currentTime >= loginTime + 60 * 60 * 1000) {
+    // 1時間経過した場合はログアウト
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("loginTime");
+    alert("1時間が経過したため、自動的にログアウトしました。");
+    window.location.href = "index.html"; // ログインページにリダイレクト
+}
+
+document.getElementById("searchButton").addEventListener("click", function() {
     // ロックアウト中かどうかを確認
     if (lockoutTime && currentTime < lockoutTime) {
         alert("パスワード認証が一時的にロックされています。1時間後に再度お試しください。");
@@ -24,7 +34,12 @@ document.getElementById("searchButton").addEventListener("click", function() {
         lockoutTime = null;
         localStorage.removeItem("failedAttempts");
         localStorage.removeItem("lockoutTime");
-        // 別ページに移動（例：success.html）
+
+        // ログイン状態を保存し、ログイン時間を記録
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("loginTime", currentTime.toString());
+
+        // 別ページに移動（例：home.html）
         window.location.href = "home.html";
     } else {
         // パスワードが間違っている場合
