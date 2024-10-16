@@ -10,6 +10,47 @@
         <link rel="stylesheet" href="../css/detail.css"><!--移動経路の所のCSSがうまく反映されなかった為、別CSS使用-->
     </head>
 
+    <script>
+        jQuery(document).ready(function() {
+            // ログイン状態の確認
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+            const loginTime = parseInt(localStorage.getItem("loginTime")) || null;
+
+            // 現在の時刻
+            const currentTime = new Date().getTime();
+
+            // ログインしていない場合はログインページにリダイレクト
+            if (!isLoggedIn) {
+                window.location.href = "index.html"; // ログインページのURLを指定
+            }
+
+            // 1時間経過した場合はログアウト
+            if (loginTime && currentTime >= loginTime + 60 * 60 * 1000) {
+                localStorage.removeItem("isLoggedIn");
+                localStorage.removeItem("loginTime");
+                alert("1時間が経過したため、自動的にログアウトしました。");
+                window.location.href = "index.html"; // ログインページにリダイレクト
+            }
+
+            // スクロールトップボタンの処理
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.pagetop').fadeIn(duration);
+                } else {
+                    jQuery('.pagetop').fadeOut(duration);
+                }
+            });
+
+            jQuery('.pagetop').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            });
+        });
+    </script>    
+
     <body>
         <header>
             <div class="container">
