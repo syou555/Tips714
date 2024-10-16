@@ -25,7 +25,7 @@ document.getElementById("searchButton").addEventListener("click", function() {
         localStorage.removeItem("failedAttempts");
         localStorage.removeItem("lockoutTime");
         // 別ページに移動（例：success.html）
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     } else {
         // パスワードが間違っている場合
         failedAttempts++;
