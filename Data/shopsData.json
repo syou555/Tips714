@@ -17,7 +17,7 @@
         "parking": "有り",
         "transport": "札幌駅からバスで13分、車で3分",
         "category": "すし",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.542276689055!2d141.35896097507305!3d43.07209348982262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b296d3890d643%3A0x49ed0f204e8a8044!2z44CSMDYwLTA5MDgg5YyX5rW36YGT5pyt5bmM5biC5p2x5Yy65YyX77yY5p2h5p2x77yV5LiB55uu77yR77yZ4oiS77yR!5e0!3m2!1sja!2sjp!4v1730255732500!5m2!1sja!2sjp"
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.826382383699!2d141.35929042534215!3d43.07213775660963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2973685b1abf%3A0x1379fbec79f90944!2z5Zue6Lui5a-_44GX44OI44Oq44OI44OzIOWMlzjmnaHlhYnmmJ_lupc!5e0!3m2!1sja!2sjp!4v1730648527771!5m2!1sja!2sjp"
     },
 
     {
@@ -987,6 +987,27 @@
         "transport": "六本木駅から徒歩3分",
         "category": "オムレツ",
         "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.486464912377!2d139.73011947463596!3d35.66502203086619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b829a9589bf%3A0xc76a42ce9f7ffc55!2z5p2x5Lqs44OQ44OrIEFqaXRvIOWFreacrOacqA!5e0!3m2!1sja!2sjp!4v1730603059170!5m2!1sja!2sjp"
+    },
+
+    {
+        "_comment": "データ47",
+        "name": "〇豚骨醤油ラーメン 王道家",
+        "name2": "おうどうや",
+        "img": "img/oudouya.jpg",
+        "img2": "img/oudouya-ramen.jpg",
+        "comment": "ラーメン美味しい",
+        "hours": "火曜日~日曜日:11時00分~1時00分",
+        "holiday": "月曜日",
+        "phone": "04-7140-0078",
+        "address": "〒277-0843 千葉県柏市明原１丁目７−２６",
+        "link": "shops/oudouya.html",
+        "commentDetail": "ちょい二郎系",
+        "menu": "ラーメン900円,ネギラーメン1,100など",
+        "budget": "900円~1,400円",
+        "parking": "無し",
+        "transport": "柏駅から徒歩7分",
+        "category": "ラーメン",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.431868895687!2d139.9675581!3d35.8629321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189ce7dace6d51%3A0x330aa341297bcc4f!2z6LGa6aqo6Yak5rK544Op44O844Oh44OzIOeOi-mBk-Wutg!5e0!3m2!1sja!2sjp!4v1730648399564!5m2!1sja!2sjp"
     }
 
 ]
