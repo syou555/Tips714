@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="content-language" content="ja">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../img/rogo2.jpg">
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        // shopsData.jsonから1番目のデータを取得し、表示する
+        fetch('../Data/shopsData.json')
+            .then(response => response.json())
+            .then(data => {
+                // 1番目のショップデータを取得
+                const shop = data[8];
+
+                const container = document.getElementById('shop-detail'); // shop-detailを指定
+
+                // ページタイトルを設定
+                document.title = `${shop.name}詳細ページ`;
+
+                container.innerHTML = `
+                <header>
+                    <div class="container">
+                        <h1>${shop.name}詳細ページ</h1> <!-- タイトルをshop.nameに変更 -->
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="#" onclick="history.back(); return false;">戻る</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                
+                <section>
+                    <div class="container50">
+                        <h2>${shop.name}</h2>
+                        <p class="categoryName">カテゴリー：${shop.category}</p>
+                        <img src="../${shop.img}" alt="エラー 画像が表示できません">
+                        <img src="../${shop.img2}" alt="エラー 画像が表示できません">
+                        <p class="comment">${shop.commentDetail}</p>
+                        <p class="comment">${shop.commentDetail2}</p>
+                        <div class="overview">
+                            <div class="karte-temp-text"><span>メニュー:</span> ${shop.menu}</div>
+                            <div class="karte-temp-text"><span>予算:</span> ${shop.budget}</div>
+                            <div class="karte-temp-text"><span>営業時間:</span> ${shop.hours}</div>
+                            <div class="karte-temp-text"><span>定休日:</span> ${shop.holiday}</div>
+                            <div class="karte-temp-text"><span>電話番号:</span> ${shop.phone}</div>
+                            <div class="karte-temp-text"><span>住所:</span> ${shop.address}</div>
+                            <div class="karte-temp-text"><span>駐車場:</span> ${shop.parking}</div>
+                            <div class="karte-temp-text"><span>交通手段:</span> ${shop.transport}</div>
+                        </div>
+                        <iframe src="${shop.map}" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                `;
+            })
+            .catch(error => console.error('Error fetching shop data:', error));
+
+        jQuery(document).ready(function() {
+            // ログイン状態の確認
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+            const loginTime = parseInt(localStorage.getItem("loginTime")) || null;
+
+            // 現在の時刻
+            const currentTime = new Date().getTime();
+
+            // ログインしていない場合はログインページにリダイレクト
+            if (!isLoggedIn) {
+                window.location.href = "index.html"; // ログインページのURLを指定
+            }
+
+            // 1時間経過した場合はログアウト
+            if (loginTime && currentTime >= loginTime + 60 * 60 * 1000) {
+                localStorage.removeItem("isLoggedIn");
+                localStorage.removeItem("loginTime");
+                alert("1時間が経過したため、自動的にログアウトしました。");
+                window.location.href = "index.html"; // ログインページにリダイレクト
+            }
+
+            // スクロールトップボタンの処理
+            var offset = 100;
+            var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.pagetop').fadeIn(duration);
+                } else {
+                    jQuery('.pagetop').fadeOut(duration);
+                }
+            });
+
+            jQuery('.pagetop').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="shop-detail"></div> <!-- ここにショップ情報が表示される -->
+    <footer>
+        <div class="relative-content">
+            <div class="kinnsi">
+                <p class="circle" id="circle1">S</p>
+                <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="pagetop">↑</div>
+</body>
+</html>
