@@ -10,46 +10,46 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         <script>
-        jQuery(document).ready(function() {
-            // ログイン状態の確認
-            const isLoggedIn = localStorage.getItem("isLoggedIn");
-            const loginTime = parseInt(localStorage.getItem("loginTime")) || null;
-
-            // 現在の時刻
-            const currentTime = new Date().getTime();
-
-            // ログインしていない場合はログインページにリダイレクト
-            if (!isLoggedIn) {
-                window.location.href = "index.html"; // ログインページのURLを指定
-            }
-
-            // 1時間経過した場合はログアウト
-            if (loginTime && currentTime >= loginTime + 60 * 60 * 1000) {
-                localStorage.removeItem("isLoggedIn");
-                localStorage.removeItem("loginTime");
-                alert("1時間が経過したため、自動的にログアウトしました。");
-                window.location.href = "index.html"; // ログインページにリダイレクト
-            }
-
-            // スクロールトップボタンの処理
-            var offset = 100;
-            var duration = 500;
-            jQuery(window).scroll(function() {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery('.pagetop').fadeIn(duration);
-                } else {
-                    jQuery('.pagetop').fadeOut(duration);
+            jQuery(document).ready(function() {
+                // ログイン状態の確認
+                const isLoggedIn = localStorage.getItem("isLoggedIn");
+                const loginTime = parseInt(localStorage.getItem("loginTime")) || null;
+    
+                // 現在の時刻
+                const currentTime = new Date().getTime();
+    
+                // ログインしていない場合はログインページにリダイレクト
+                if (!isLoggedIn) {
+                    window.location.href = "index.html"; // ログインページのURLを指定
                 }
+    
+                // 1時間経過した場合はログアウト
+                if (loginTime && currentTime >= loginTime + 60 * 60 * 1000) {
+                    localStorage.removeItem("isLoggedIn");
+                    localStorage.removeItem("loginTime");
+                    alert("1時間が経過したため、自動的にログアウトしました。");
+                    window.location.href = "index.html"; // ログインページにリダイレクト
+                }
+    
+                // スクロールトップボタンの処理
+                var offset = 100;
+                var duration = 500;
+                jQuery(window).scroll(function() {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.pagetop').fadeIn(duration);
+                    } else {
+                        jQuery('.pagetop').fadeOut(duration);
+                    }
+                });
+    
+                jQuery('.pagetop').click(function(event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({scrollTop: 0}, duration);
+                    return false;
+                });
             });
-
-            jQuery('.pagetop').click(function(event) {
-                event.preventDefault();
-                jQuery('html, body').animate({scrollTop: 0}, duration);
-                return false;
-            });
-        });
-    </script>
-    </head>
+        </script>
+        </head>
 
     <body>
         <header>
@@ -57,36 +57,30 @@
                 <h1>検索</h1>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="home.html">ホーム</a></li>
                         <li><a href="List of shops.html">店舗一覧</a></li>
                         <li><a href="search.html">検索</a></li>
+                        <li><a href="categoryMemo.html">メモ</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <body>
-            <input type="text" id="searchInput" placeholder="お店を検索...">
+        <main class="Search-frame">
+            <input type="text" id="addressInput" placeholder="住所を入力 (例: 上野)">
+            <input type="text" id="nameInput" placeholder="お店/食べ物/パークなど">
             <button onclick="search()">検索</button>
+        </main>
         
+        <div>
             <ul id="searchResults"></ul>
         
             <div id="noResultsMessage" style="display: none;">該当なし</div>
         
             <script src="js/script.js"></script>
-        </body>
-        
+        </div>
 
         <footer>
             <div class="relative-content">
-                <ul><!--
-                    <a href="#">
-                        <img src="#" alt="Twitter"></a>-->
-                    <a href="https://www.instagram.com/shop_evaluation_s?igsh=ZmJyMjNoNGw3N21m" class="relative-content1">
-                        <img src="img/insutagram.jpg" alt="Instagram"></a>
-                 <!--   <a href="#">
-                        <img src="#" alt="Facebook"></a>-->
-                </ul>
                 <div class="kinnsi">
                     <p class="circle" div id="circle1">S</p>
                     <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
