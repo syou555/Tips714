@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* bodyの最小高さを100vhに設定 */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1% 0;
+}
+
+
+#c1 .comment,
+#c1 .overview {
+    margin-left: 7%;
+}
+
+#c1 {
+    text-align: center;
+}
+
+#c2 {
+    text-align: left;
+    margin: 0% 24.8%;
+    margin-right: auto;
+}
+
+#c2,
+#c3,
+#c4 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#c2 {
+    width: 90%;
+}
+
+#c3 {
+    width: 22%;
+}
+
+#c4 {
+    width: 42%;
+}
+
+#services {
+    margin-left: 23%;
+}
+
+.container1 {
+    margin: 20% 0 20% -25%;
+}
+
+section h1 {
+    font-size: 270%;
+}
+
+section h2 {
+    font-size: 200%;
+}
+
+.container1 p {
+    font-size: 150%;
+    color: #fff;
+}
+
+.container11 img {
+    width: 40%;
+    height: auto;
+}
+
+.container50 img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 3%;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 10px 20px; /* ボタンの上下左右の余白を調整 */
+    border: 3px solid #ffffff; /* ボタンの境界線を調整 */
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+
+.nav-links li a:hover {
+    background-color: #333;
+    color: #E40505;
+}
+
+.container1 li a:hover {
+    color: #E40505;
+}
+
+section {
+    padding: 2% 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1%;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 0.5%;
+    margin-bottom: 1%;
+}
+
+div button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1% 1.5%;
+    cursor: pointer;
+}
+
+/* フッターをページの一番下に配置 */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 1%;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* コンテンツが短い場合でもフッターを最下部に配置 */
+}
+
+.relative-content {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 100%;
+}
+
+.karte-temp-text span {
+    font-weight: bold;
+    margin: 0px 0px 0px 160px;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 ul {
+    padding: 0;
+}
+
+.container1 ul li {
+    padding: 2% 0;
+}
+
+.container1 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.relative-content1 img {
+    width: 20%;
+}
+
+#box {
+    border: 1px solid gray;
+    background-color: rgb(246, 247, 255);
+    margin-left: 27%;
+    width: 46.2%;
+}
+
+#box1 {
+    border: 1px solid gray;
+    background-color: rgb(33, 66, 252);
+    margin-left: 27%;
+    width: 46.2%;
+}
+
+.pagetop {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 3.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagetop:hover {
+    color: #fff !important;
+    background-color: #ED702B;
+    text-decoration: none;
+}
+
+.overview {
+    border: 2px solid rgb(112, 112, 112);
+    background-color: rgba(246, 247, 255, 0);
+    width: 68%;
+    margin: 0px 0px 0px 220px;
+}
+
+.comment {
+    margin: 10px 0px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aeff; /* 枠の色を白色に変更 */
+    line-height: 35px;
+    margin: 0% 0% -2% 0%;
+}
+
+#circle1 {
+    font-size: 30px;
+    color: #00aeff;
+}
+
+.kinnsi {
+    font-size: 150%;
+}
+
+.relative-content1 img {
+    width: 25%;
+}
+
+.karte-temp-text {
+    text-align: left; /* テキストを左揃え */
+    margin-left: 0;   /* 必要に応じてマージンを調整 */
+    padding-left: 10px; /* 左の余白を調整して見た目を整える */
+}
+
+/*詳細ページのカテゴリー*/
+.categoryName {
+    text-align: left;
+    margin: -5px 0px 0px 220px;
+}
+
+.budget2margin {
+    padding: 0rem 0rem 0rem 2.6rem;
+}
+
+.hours2mrgin {
+    padding: 0rem 0rem 0rem 4.6rem;
+}
+
+@media screen and (max-width: 428px) {
+header h1 {
+    font-size: 1.5rem;
+}
+
+section h1 {
+    font-size: 1.2rem;
+}
+
+section h2 {
+    font-size: 1rem;
+}
+
+.container1 p {
+    font-size: 0.8rem;
+}
+
+.nav-links li a {
+    padding: 0px 16px; /* スマートフォン向けに上下の余白を調整 */
+    border: 2px solid #ffffff; /* スマートフォン向けに境界線を調整 */
+    height: 30px; /* スマートフォン向けにボタンの高さを調整 */
+    line-height: 30px; /* スマートフォン向けにテキストを垂直方向に中央揃え */
+}
+
+.container50 img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+}
+
+form input,
+form textarea {
+    width: 90%;
+}
+
+.relative-content1 img {
+    width: 15%;
+}
+
+#box,
+#box1 {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.ss,
+.overview {
+    width: 90%;
+}
+
+#c1 .ss,
+#c1 .overview {
+    margin-left: 6%;
+}
+
+footer p {
+    font-size: 70%;
+    white-space: nowrap;
+}
+
+#c4 {
+    width: 62%;
+}
+
+.container11 img {
+    width: 60%;
+    height: auto;
+}
+    
+.yazi img {
+    width: 2%;
+    height: auto;
+}
+    
+.relative-content1 img {
+    width: 13%;
+    margin: 0% 0% 0% 60%;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    margin: 2% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 20px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 67%;
+    margin: -4% 0% 0% 10%
+}
+
+}
+
+@media screen and (max-width: 390px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+.container50 img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/*下記追加すれば枠内の文字治る*/
+.karte-temp-text {
+    font-size: 15px;
+}
+
+.karte-temp-text span {
+    margin: 0px 0px 0px 0px;
+}
+/*ここまで*/
+.overview {
+    border: 2px solid rgb(112, 112, 112);
+    background-color: rgba(246, 247, 255, 0);
+    width: 80%;
+    margin: auto;
+}
+
+.overview .karte-temp-text {
+    overflow-wrap: break-word; 
+}
+
+.categoryName {
+    text-align: left;
+    margin: -5px 0px 0px 43px;
+    font-size: 10px;
+}
+
+.map {
+    width: 300px; 
+    height: 200px; 
+    margin: auto;
+}
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 3% 0% 0% 0%;
+}
+
+#circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
+}
+
+}
+@media screen and (max-width: 360px) {
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    margin: 4% 0% 0% 0%;
+}
+
+.container50 img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+
+  #circle1 {
+    font-size: 17px;
+    color: #00aeff;
+}
+
+.kinnsi2{
+    font-size: 60%;
+    margin: -4% 0% 0% 13%
+}
+
+}
